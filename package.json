@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "glob": "^7.1.6",
+    "pug": "^3.0.0",
+    "serve": "^11.3.2"
+  },
+  "scripts": {
+    "start": "serve public",
+    "build": "node index.js"
+  }
+}

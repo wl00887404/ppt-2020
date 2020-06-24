@@ -1,0 +1,18 @@
+.reveal h1,
+.reveal h2,
+.reveal h3 {
+  font-weight: normal;
+}
+
+.reveal ul {
+  line-height: 1.6;
+}
+
+.far:not(:last-child) {
+  margin-right: 0.5em;
+}
+
+.reveal img {
+  margin: 0 auto;
+  display: block;
+}

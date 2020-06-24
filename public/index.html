@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>使用 Git 進行版控</title>
+
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/white.css" id="theme" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+      integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
+      crossorigin="anonymous"
+    />
+    <!-- Theme used for syntax highlighted code -->
+    <link
+      rel="stylesheet"
+      href="plugin/highlight/monokai.css"
+      id="highlight-theme"
+    />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section><h1>使用 Git 進行版控</h1></section>
+        <section>
+          <section>
+            <h2>如何管理程式碼</h2>
+          </section>
+          <section style="text-align: left;">
+            <ul style="list-style: none;">
+              <li>
+                <i class="far fa-file-archive"></i> <span>期末專案.zip</span>
+              </li>
+              <li>
+                <i class="far fa-file-archive"></i>
+                <span>期末專案（完成版）.zip</span>
+              </li>
+              <li>
+                <i class="far fa-file-archive"></i>
+                <span>期末專案（終極完成版）.zip</span>
+              </li>
+              <li>
+                <i class="far fa-file-archive"></i>
+                <span>期末專案（最終完成版）.zip</span>
+              </li>
+              <li>
+                <i class="far fa-file-archive"></i>
+                <span>期末專案（真的不會再修改版）.zip</span>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <p>這個作法稱之為「複製貼上大法」</p>
+          </section>
+          <section>
+            <p>這樣的作法很有明顯的缺點</p>
+          </section>
+          <section>
+            <p>每次的新版本都要重新取名子</p>
+          </section>
+          <section>
+            <p>光看檔案名稱，我們無法快速的了解：</p>
+            <ul>
+              <li>無法新版本的成因</li>
+              <li>無法得知各版本之間的差異</li>
+              <li>無法追蹤修改者和修改的內容</li>
+            </ul>
+          </section>
+          <section>
+            <p>在使用複製貼上大法時</p>
+            <p>有可能意外覆蓋掉別人的檔案</p>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>Git</h2>
+          </section>
+          <section>
+            <p>Git 是目前業界最流行的版本控制系統</p>
+            <p>最初目的是為更好地管理 Linux Kernel開發而設計</p>
+          </section>
+          <section>
+            <p>Git 與其他版控工具不同</p>
+            <p>Git 是分散式版控工具</p>
+            <p>也就是說 Git 不需要一台遠端伺服器</p>
+            <p>就算沒有網路，在你的電腦上也可以操作</p>
+            <p>待有網路的時候再與其它人同步即可</p>
+          </section>
+          <section>
+            <p>如果不使用 Git</p>
+            <p>還是可以持續學習 React</p>
+          </section>
+          <section>
+            <p>但能夠靈活的使用 Git</p>
+            <p>管理自己的程式碼</p>
+            <p>不會誤刪別人程式碼</p>
+            <p>如此才能與他人合作</p>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>Commit</h2>
+          </section>
+          <section>
+            <p>在 Git 中</p>
+            <p>每一次的更動稱之為 Commit</p>
+          </section>
+          <section>
+            <img src="assets/commit1.png" alt="" />
+          </section>
+          <section>
+            <img src="assets/commit2.png" alt="" />
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>多人合作開發</h2>
+          </section>
+          <section>
+            <img src="assets/git-flow.png" alt="" />
+          </section>
+        </section>
+        <section>
+          <h2>接下來的章節</h2>
+          <ul>
+            <li>安裝 Git CLI / GUI</li>
+            <li>你的第一個 commit</li>
+            <li>如何修改過去的 commit ?</li>
+            <li>GitHub 多人合作開發</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
+</html>
