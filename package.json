@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "glob": "^7.1.6",
-    "pug": "^3.0.0",
+    "pug": "^3.0.1",
     "serve": "^11.3.2"
   },
   "scripts": {
